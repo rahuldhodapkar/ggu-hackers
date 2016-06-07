@@ -449,12 +449,12 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
-      //'clean:server',
-      //'wiredep',
-      //'concurrent:server',
-      //'postcss:server',
+      'clean:server',
+      'wiredep',
+      'concurrent:server',
+      'postcss:server',
       'connect:livereload',
-      //'watch'
+      'watch'
     ]);
   });
 
