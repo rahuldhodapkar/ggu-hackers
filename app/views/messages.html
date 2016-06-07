@@ -1,0 +1,7 @@
+<h2>showing all messages for {{params.user}}.</h2>
+
+<ul>
+    <li ng-repeat="message in messages track by $index">
+        <a href="#/messages/{{params.user}}/{{$index}}">{{message.subj}}</a>
+    </li>
+</ul>
